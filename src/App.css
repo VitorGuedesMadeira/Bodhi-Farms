@@ -1,0 +1,25 @@
+:root {
+  /* colors */
+  --color-1: black;
+  --color-2: white;
+  --color-3: black;
+  --color-4: white;
+  --color-5: black;
+
+  /* hover colors */
+  --color-hover-1: black;
+  --color-hover-2: white;
+  --color-hover-3: black;
+  --color-hover-4: white;
+  --color-hover-5: black;
+
+  /* shadows */
+  --box-shadow-1: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  --box-shadow-2: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  --box-shadow-3: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+  /* fonts */
+  --font-1: 'Roboto', sans-serif;
+  --font-2: 'Courier New', courier, monospace;
+  --font-3: 'Franklin Gothic Medium', 'arial narrow', arial, sans-serif;
+}
