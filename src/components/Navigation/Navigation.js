@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaAngleDown } from 'react-icons/fa'
+import { FaAngleDown, FaSun, FaMoon } from 'react-icons/fa'
 import logo from '../../assets/images/logos/BodhiFarmLogo.png'
 
 // styles
@@ -8,9 +8,19 @@ import './Navigation.css';
 
 const Navigation = () => {
   const [isHamburgerActive, setActive] = useState(false);
+  const [isDarkModeActive, setDarkMode] = useState(true);
 
   const toggleClass = () => {
     setActive(!isHamburgerActive);
+  };
+
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkModeActive)
+    if(isDarkModeActive) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
   };
 
   return (
@@ -72,7 +82,12 @@ const Navigation = () => {
           </li>
         </ul>
 
-        <span>Get high!</span>
+        <input onClick={toggleDarkMode} type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <FaSun className="fa-sun" />
+          <FaMoon className="fa-moon" />
+          <div class="ball"></div>
+        </label>
       </div>
 
       <div onClick={toggleClass} className={isHamburgerActive ? 'hamburger-menu on' : 'hamburger-menu'}>

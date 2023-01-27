@@ -10,6 +10,7 @@ import option3 from './pages/option3/option3';
 
 // styles
 import './App.css';
+import './darkmode/darkmode.css'
 
 function App() {
   return (

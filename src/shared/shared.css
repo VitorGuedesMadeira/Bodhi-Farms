@@ -27,10 +27,13 @@
   animation: anime 16s linear infinite;
   text-decoration: none;
   transition: 1s;
+  cursor: pointer;
+  border: none;
 }
 
 .btn2 {
   position: absolute;
+  border-radius: 50px;
   z-index: -1;
   filter: blur(30px);
   opacity: 0.8;
