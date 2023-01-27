@@ -15,6 +15,20 @@
   padding: 5rem;
 }
 
+.section1-container span {
+  font-weight: 900;
+  color: orange;
+}
+
+.section1-container h1 {
+  font-family: var(--font-2);
+  font-size: 4em;
+}
+
+.section1-container h3 {
+  text-shadow: 0 0 20px black;
+}
+
 .section2-container {
   background-color: black;
   color: white;
@@ -33,8 +47,32 @@
   text-align: center;
 }
 
+.pictures-container {
+  display: flex;
+  overflow: auto;
+  background-color: black;
+  padding: 1rem 0;
+}
+
+.pictures-container img {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  margin-left: -1rem;
+  margin-right: -1rem;
+  cursor: pointer;
+}
+
+.pictures-container img:nth-child(odd) {
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+.pictures-container img:nth-child(even) {
+  margin-bottom: 2rem;
+}
+
 .section3-container {
   background-color: #181311;
+  background-image: linear-gradient(to bottom, black, transparent);
   color: white;
   min-height: 100vh;
   display: flex;

@@ -10,7 +10,9 @@ const Component1 = () => {
   return (
     <div>
       <section className='section1-container'>
-        <h1>Welcome to Bodhi Farm Hydroponics Cannabis Lab</h1>
+        <span>Welcome to</span>
+        <h1>Bodhi Farm</h1>
+        <h3>Hydroponics Cannabis Lab</h3>
       </section>
 
       <section className='section2-container'>
@@ -18,11 +20,22 @@ const Component1 = () => {
         <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
         <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
         <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
-        <p>Everyone is welcome to our farm! Get high!. Save the World!</p>
+        <p>Everyone is welcome to our farm! Get high! Save the World!</p>
         <NavLink className="btn" to="option1">
           Learn More
           <div className="btn2" />
         </NavLink>
+      </section>
+
+      <section className="pictures-container">
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
+        <img src="https://picsum.photos/250" alt="random" />
       </section>
 
       <section className='section3-container'>

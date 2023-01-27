@@ -9,6 +9,7 @@
   position: fixed;
   padding: 0 5rem;
   box-shadow: 0 0 20px black;
+  z-index: 10;
 }
 
 .navigation-logo {
@@ -140,12 +141,13 @@
   height: 1.5rem;
   width: 3rem;
   transform: scale(1.5);
-  background-color: #3d363372;
+  background-color: #545b5472;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .label .ball {
-  background-color: #fff;
+  display: block;
+  background: white;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -153,7 +155,7 @@
   height: 20px;
   width: 20px;
   transform: translateX(0);
-  transition: transform 0.2s linear;
+  transition: transform 0.5s ease-in-out;
 }
 
 .checkbox:checked + .label .ball {
