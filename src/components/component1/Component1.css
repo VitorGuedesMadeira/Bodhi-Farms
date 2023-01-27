@@ -3,9 +3,14 @@
 }
 
 .section1-container {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0), transparent) , url(../../assets/images/backgrounds/marijuana1.jpg);
+  background-image: linear-gradient(to bottom, black, transparent), url(../../assets/images/backgrounds/marijuana1.jpg);
   background-size: cover;
   height: calc(100vh - 3rem);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section2-container {

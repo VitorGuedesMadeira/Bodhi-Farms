@@ -1,0 +1,19 @@
+.footer-container {
+  background-color: #181311;
+  color: white;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.icon {
+  color: white;
+}

@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 import firstPage from './pages/firstPage/firstPage';
 import secondPage from './pages/secondPage/secondPage';
 import thirdPage from './pages/thirdPage/thirdPage';
@@ -22,6 +23,7 @@ function App() {
         <Route path="option2" element={option2()} />
         <Route path="option3" element={option3()} />
       </Routes>
+      <Footer />
     </div>
   );
 }

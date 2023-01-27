@@ -8,6 +8,13 @@
   align-items: center;
 }
 
+.navigation-menu-div {
+  display: none;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+
 .navigation-ul {
   display: flex;
   list-style-type: none;
@@ -24,7 +31,6 @@
 
 .active-link {
   text-decoration: none;
-  color: goldenrod;
   background-color: green;
   height: 100%;
   width: 100%;
@@ -78,6 +84,33 @@
   background-color: orange;
 }
 
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hamburger-menu > div {
+  background-color: white;
+  height: 2px;
+  width: 15px;
+  border-radius: 5rem;
+  transition: 0.5s;
+}
+
+.hamburger-menu.on div:nth-child(1) {
+  rotate: -45deg;
+}
+
+.hamburger-menu.on div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.on div:nth-child(3) {
+  rotate: 45deg;
+}
+
 @keyframes slide-down {
   from {
     opacity: 0;
@@ -87,5 +120,15 @@
   to {
     opacity: 1;
     height: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navigation-menu-div {
+    display: flex;
   }
 }

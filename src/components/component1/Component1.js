@@ -6,7 +6,8 @@ import './Component1.css';
 const Component1 = () => (
   <div>
     <section className='section1-container'>
-      1
+      <h1>WE KNOW CANNABIS.</h1>
+      <h2>LICENSING. DESIGN. BUILD. SYSTEMS. OPERATIONS.</h2>
     </section>
 
     <section className='section2-container'>
