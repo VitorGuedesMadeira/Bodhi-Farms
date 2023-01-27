@@ -3,7 +3,7 @@
 }
 
 .section1-container {
-  background-image: linear-gradient(to bottom, black, transparent), url(../../assets/images/backgrounds/marijuana1.jpg);
+  background-image: linear-gradient(to bottom, black, transparent, black), url(../../assets/images/backgrounds/marijuana1.jpg);
   background-size: cover;
   height: 100vh;
   color: white;
@@ -11,21 +11,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align-last: center;
+  padding: 5rem;
 }
 
 .section2-container {
-  background-color: red;
-  height: 100vh;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align-last: center;
+  padding: 5rem;
 }
 
 .section3-container {
-  background-color: mediumseagreen;
+  background-color: #181311;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  padding: 5rem;
 }
 
 .section3-options {
@@ -39,23 +51,156 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  box-shadow: 0 0 5px black;
+  background-color: black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 250px;
 }
 
 .section3-option div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
   padding: 2rem;
 }
 
 .section3-option ul {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fixed-backgrounds-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #181311;
+}
+
+.fixed-background-1 {
+  background-image: linear-gradient(to right, black, transparent, black), url(../../assets/images/backgrounds/marijuana1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 7.5rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.fixed-background-2 {
+  background-image: linear-gradient(to right, black, transparent, black), url(../../assets/images/backgrounds/marijuana2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 7.5rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.fixed-background-3 {
+  background-image: linear-gradient(to right, black, transparent, black), url(../../assets/images/backgrounds/marijuana3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 7.5rem;
+  width: 100%;
+  transition: 0.5s;
 }
 
 .section4-container {
-  background-color: aquamarine;
+  background-image: url(../../assets/images/pngs/weed.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-blend-mode: multiply;
+  background-color: #181311;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.section4-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section4-team-member {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.section4-team-member div {
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.section4-team-member h4 {
+  color: orange;
+}
+
+.section5-container {
+  background-image: linear-gradient(to bottom, black, rgb(0, 0, 0, 0.9), black), url(../../assets/images/backgrounds/marijuana1.jpg);
+  background-size: cover;
+  color: white;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+}
+
+.section5-container p {
+  text-align-last: center;
+}
+
+.section5-container textarea {
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .section4-team-member {
+    flex-direction: row;
+  }
+
+  .section5-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .section5-container input {
+    width: 500px;
+  }
+
+  .section5-container textarea {
+    width: 500px;
+  }
 }

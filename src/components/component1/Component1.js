@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 // styles
 import './Component1.css';
+import '../../shared/shared.css'
 
 const Component1 = () => (
   <div>
@@ -12,12 +13,15 @@ const Component1 = () => (
 
     <section className='section2-container'>
       <h2>Who are we?</h2>
-      <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.
-      We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
+      <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
+      <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
       <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
       <p>Everyone is welcome to our farm! Get high!. Save the World!</p>
 
-      <NavLink to="option1">Learn More</NavLink>
+      <NavLink className="btn" to="option1">
+        Learn More
+        <div className="btn2" />
+      </NavLink>
     </section>
 
     <section className='section3-container'>
@@ -25,51 +29,136 @@ const Component1 = () => (
 
       <div className="section3-options">
         <div className="section3-option">
-          <img src="https://picsum.photos/200" alt="random" />
+          <img src="https://picsum.photos/250" alt="random" />
           <div>
-            <h3>Subject 1</h3>
+            <h3>Compliance</h3>
             <ul>
-              <li>item 1</li>
-              <li>item 2</li>
-              <li>item 3</li>
-              <li>item 4</li>
-              <li>item 5</li>
+              <li>ODC Medical Cannabis Licensing</li>
+              <li>TGA CGMP, GAP & ISO Certification</li>
+              <li>Medical Device Registration</li>
+              <li>Pharmaceutical Formulation Development</li>
             </ul>
           </div>
         </div>
 
         <div className="section3-option">
-          <img src="https://picsum.photos/200" alt="random" />
+          <img src="https://picsum.photos/250" alt="random" />
           <div>
-            <h3>Subject 2</h3>
+            <h3>Operations</h3>
             <ul>
-              <li>item 1</li>
-              <li>item 2</li>
-              <li>item 3</li>
-              <li>item 4</li>
-              <li>item 5</li>
+              <li>Infrastructure & Building Solutions</li>
+              <li>Facility Design & Equipment Procurement</li>
+              <li>Genetic Curatorial & Acquisition</li>
+              <li>Contract Services Solutions</li>
             </ul>
           </div>
         </div>
 
         <div className="section3-option">
-          <img src="https://picsum.photos/200" alt="random" />
+          <img src="https://picsum.photos/250" alt="random" />
           <div>
-            <h3>Subject 3</h3>
+            <h3>Equities</h3>
             <ul>
-              <li>item 1</li>
-              <li>item 2</li>
-              <li>item 3</li>
-              <li>item 4</li>
-              <li>item 5</li>
+              <li>Capital Solutions</li>
+              <li>Deal Flow & Off-Take Agreements</li>
+              <li>Mergers & Acquisitions</li>
+              <li>Domestic & International Partnerships</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <section className="fixed-backgrounds-container">
+      <div className="fixed-background-1"></div>
+      <div className="fixed-background-2"></div>
+      <div className="fixed-background-3"></div>
+    </section>
+
     <section className='section4-container'>
-      4
+      <h2>Meet our team!</h2>
+      <div className="section4-wrap">
+        <div className="section4-team-member">
+          <img src="https://picsum.photos/200" alt="random" />
+          <div>
+            <h3>Name</h3>
+            <h4>Profession</h4>
+            <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+          </div>
+        </div>
+
+        <div className="section4-team-member">
+          <div>
+            <h3>Name</h3>
+            <h4>Profession</h4>
+            <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+          </div>
+          <img src="https://picsum.photos/200" alt="random" />
+        </div>
+
+        <div className="section4-team-member">
+          <img src="https://picsum.photos/200" alt="random" />
+          <div>
+            <h3>Name</h3>
+            <h4>Profession</h4>
+            <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+          </div>
+        </div>
+        
+        <div className="section4-team-member">
+          <div>
+            <h3>Name</h3>
+            <h4>Profession</h4>
+            <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+          </div>
+          <img src="https://picsum.photos/200" alt="random" />
+        </div>        
+      </div>
+      
+      <NavLink className="btn" to="option1">
+        Learn More
+        <div className="btn2" />
+      </NavLink>
+    </section>
+
+    <section className='section5-container'>
+      <div>
+        <h2>Contact us</h2>
+        <p>Interested in finding out more about the Australian Medical Cannabis industry? Need help around Australian Government cannabis legislation? Or require support for an ongoing Medical Cannabis project? Contact us today to find out how we can help you.</p>
+      </div>
+      <form
+        action="https://formspree.io/f/mdovakbk"
+        method="post"
+        class="form"
+      >
+        <input
+          type="text"
+          name="name"
+          required
+          maxLength="30"
+          placeholder="Full Name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email address"
+        />
+        <textarea
+          name="message"
+          cols="30"
+          rows="7"
+          maxLength="500"
+          required
+          placeholder="Enter text here"
+        ></textarea>
+        <small></small>
+        <button className="btn" type="submit">
+          Get in touch
+          <div className="btn2" />
+        </button>
+      </form>
     </section>
   </div>
 );

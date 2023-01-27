@@ -7,6 +7,12 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  padding: 0 5rem;
+}
+
+.navigation-logo {
+  height: 2rem;
+  border-radius: 0.5rem;
 }
 
 .navigation-menu-div {
@@ -21,24 +27,22 @@
   list-style-type: none;
   height: 100%;
   align-items: center;
-  background-color: red;
 }
 
 .navigation-ul li {
-  background-color: blue;
   height: 100%;
   position: relative;
 }
 
 .active-link {
   text-decoration: none;
-  background-color: green;
+  color: orange;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .none {
@@ -49,23 +53,29 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .active-link:hover,
 .none:hover {
-  background-color: orange;
+  transition: 0.25s;
+  color: orange;
 }
 
 .drop-down {
   display: none;
 }
 
+.drop-down-icon {
+  margin-top: 0.25rem;
+  transition: 0.5s;
+}
+
 .active-link:hover .drop-down,
 .none:hover .drop-down {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: #181311;
   position: absolute;
   list-style: none;
   left: 0;
@@ -82,7 +92,8 @@
 }
 
 .drop-down li:hover {
-  background-color: orange;
+  background-color: black;
+  color: orange;
 }
 
 .hamburger-menu {

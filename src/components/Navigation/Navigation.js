@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaSortDown } from 'react-icons/fa'
+import { FaAngleDown } from 'react-icons/fa'
+import logo from '../../assets/images/logos/BodhiFarmLogo.png'
+
 // styles
 import './Navigation.css';
 
@@ -13,16 +15,19 @@ const Navigation = () => {
 
   return (
     <nav className="navigation-container">
-      <div className="navigation-logo">
-        <span>MyLOGO</span>
-      </div>
+      <img className="navigation-logo" src={logo} alt="logo" />
 
       <div className="navigation-menu-div">
         <ul className="navigation-ul">
           <li>
-            <NavLink className={({ isActive }) => (isActive ? 'active-link link-1' : 'none')} to="/">
-              FirstPage
-              <FaSortDown />
+            <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link link-1' : 'none')} to="/secondPage">
+              Services
+              <FaAngleDown className="drop-down-icon" />
               <ul className="drop-down">
                 <li>
                   <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="option1">
@@ -43,14 +48,9 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="secondPage">
-              SecondPage
-            </NavLink>
-          </li>
-          <li>
             <NavLink className={({ isActive }) => (isActive ? 'active-link link-1' : 'none')} to="thirdPage">
-              ThirdPage
-              <FaSortDown />
+              Team
+              <FaAngleDown className="drop-down-icon" />
               <ul className="drop-down">
                 <li>
                   <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="option1">
@@ -71,9 +71,8 @@ const Navigation = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="navigation-logo">
-          <span>MyContact</span>
-        </div>
+
+        <span>Get high!</span>
       </div>
 
       <div onClick={toggleClass} className={isHamburgerActive ? 'hamburger-menu on' : 'hamburger-menu'}>

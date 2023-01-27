@@ -1,0 +1,66 @@
+.button-1 {
+  background-color: green;
+  color: white;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-1:hover {
+  background-color: rgb(5, 84, 5);
+}
+
+.btn,
+.btn2 {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 50px;
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background-size: 600%;
+  -webkit-animation: anime 16s linear infinite;
+  animation: anime 16s linear infinite;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.btn2 {
+  position: absolute;
+  z-index: -1;
+  filter: blur(30px);
+  opacity: 0.8;
+  transition: 1s;
+}
+
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
