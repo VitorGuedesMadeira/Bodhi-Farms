@@ -14,21 +14,22 @@
 
 .btn,
 .btn2 {
-  width: 200px;
-  height: 60px;
+  width: 175px;
+  height: 50px;
   font-size: 20px;
   text-align: center;
-  line-height: 60px;
+  line-height: 50px;
   color: rgba(255, 255, 255, 0.9);
   border-radius: 50px;
-  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background: linear-gradient(-45deg, orange, #ff3d3d, goldenrod);
   background-size: 600%;
   -webkit-animation: anime 16s linear infinite;
-  animation: anime 16s linear infinite;
+  animation: anime 8s linear infinite;
   text-decoration: none;
   transition: 1s;
   cursor: pointer;
   border: none;
+  font-weight: 900;
 }
 
 .btn2 {

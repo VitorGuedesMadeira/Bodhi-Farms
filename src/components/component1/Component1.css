@@ -101,13 +101,25 @@
   max-width: 250px;
 }
 
-.section3-option div {
+.section3-option-information {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
   padding: 2rem;
   height: 100%;
+}
+
+.section3-option-image-div {
+  overflow: hidden;
+}
+
+.section3-option img {
+  transition: 1s;
+}
+
+.section3-option:hover img {
+  transform: scale(1.05);
 }
 
 .section3-option ul {

@@ -43,8 +43,10 @@ const Component1 = () => {
 
         <div className="section3-options">
           <div className="section3-option">
-            <img src="https://picsum.photos/250" alt="random" />
-            <div>
+            <div className="section3-option-image-div">
+              <img src="https://picsum.photos/250" alt="random" />
+            </div>
+            <div className="section3-option-information">
               <h3>Compliance</h3>
               <ul>
                 <li>
@@ -72,8 +74,10 @@ const Component1 = () => {
           </div>
 
           <div className="section3-option">
-            <img src="https://picsum.photos/250" alt="random" />
-            <div>
+            <div className="section3-option-image-div">
+              <img src="https://picsum.photos/250" alt="random" />
+            </div>
+            <div className="section3-option-information">
               <h3>Operations</h3>
               <ul>
                 <li>
@@ -101,8 +105,10 @@ const Component1 = () => {
           </div>
 
           <div className="section3-option">
-            <img src="https://picsum.photos/250" alt="random" />
-            <div>
+            <div className="section3-option-image-div">
+              <img src="https://picsum.photos/250" alt="random" />
+            </div>
+            <div className="section3-option-information">
               <h3>Equities</h3>
               <ul>
                 <li>
