@@ -21,7 +21,51 @@ const Component1 = () => (
     </section>
 
     <section className='section3-container'>
-      3
+      <h2>What can we help you with?</h2>
+
+      <div className="section3-options">
+        <div className="section3-option">
+          <img src="https://picsum.photos/200" alt="random" />
+          <div>
+            <h3>Subject 1</h3>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+              <li>item 5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section3-option">
+          <img src="https://picsum.photos/200" alt="random" />
+          <div>
+            <h3>Subject 2</h3>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+              <li>item 5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section3-option">
+          <img src="https://picsum.photos/200" alt="random" />
+          <div>
+            <h3>Subject 3</h3>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+              <li>item 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section className='section4-container'>
