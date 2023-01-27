@@ -14,8 +14,10 @@
 }
 
 .navigation-logo {
-  height: 2rem;
-  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-2);
+  font-size: 1.25em;
 }
 
 .navigation-menu-div {
@@ -170,10 +172,36 @@
 
 .fa-moon {
   color: #f1c40f;
+  animation: moon 2.5s infinite linear;
 }
 
 .fa-sun {
   color: #f39c12;
+  animation: sun 15s infinite linear;
+}
+
+@keyframes moon {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-25deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes slide-down {

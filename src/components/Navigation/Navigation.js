@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaAngleDown, FaSun, FaMoon } from 'react-icons/fa'
-import logo from '../../assets/images/logos/BodhiFarmLogo.png'
+import { FaAngleDown, FaSun, FaMoon } from 'react-icons/fa';
 
 // styles
 import './Navigation.css';
@@ -15,17 +14,17 @@ const Navigation = () => {
   };
 
   const toggleDarkMode = () => {
-    setDarkMode(!isDarkModeActive)
-    if(isDarkModeActive) {
-      document.body.classList.add('dark')
+    setDarkMode(!isDarkModeActive);
+    if (isDarkModeActive) {
+      document.body.classList.add('dark');
     } else {
-      document.body.classList.remove('dark')
+      document.body.classList.remove('dark');
     }
   };
 
   return (
     <nav className="navigation-container">
-      <img className="navigation-logo" src={logo} alt="logo" />
+      <span className="navigation-logo">Bodhi Farm</span>
 
       <div className="navigation-menu-div">
         <ul className="navigation-ul">
@@ -82,21 +81,21 @@ const Navigation = () => {
           </li>
         </ul>
 
-        <input onClick={toggleDarkMode} type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
+        <input onClick={toggleDarkMode} type="checkbox" className="checkbox" id="chk" />
+        <label className="label" htmlFor="chk">
           <FaSun className="fa-sun" />
           <FaMoon className="fa-moon" />
-          <div class="ball"></div>
+          <div className="ball" />
         </label>
       </div>
 
       <div onClick={toggleClass} className={isHamburgerActive ? 'hamburger-menu on' : 'hamburger-menu'}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
+        <div />
       </div>
     </nav>
-  )
+  );
 };
 
 export default Navigation;

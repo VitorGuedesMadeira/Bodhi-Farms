@@ -101,6 +101,10 @@
   max-width: 250px;
 }
 
+.section3-option:hover {
+  background-color: #342f2c72;
+}
+
 .section3-option-information {
   display: flex;
   flex-direction: column;
@@ -195,7 +199,6 @@
 .section4-team-member {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   background-color: #3d363372;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   color: white;
@@ -203,8 +206,16 @@
   overflow: hidden;
 }
 
+.section4-team-member img {
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 50%;
+  border: 1px solid orange;
+  box-shadow: 0 0 20px black;
+}
+
 .section4-team-member div {
-  padding: 1rem;
+  padding: 2rem;
   max-width: 300px;
 }
 
