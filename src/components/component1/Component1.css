@@ -13,6 +13,7 @@
   align-items: center;
   text-align: center;
   padding: 5rem;
+  animation: fadeDark 0.75s ease-in-out;
 }
 
 .section1-container span {
@@ -265,6 +266,16 @@
   padding: 0.5rem;
   outline: none;
   border-radius: 0.5rem;
+}
+
+@keyframes fadeDark {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {

@@ -59,17 +59,17 @@
 
 .loading-page img {
   animation: rotating 7.5s infinite linear;
-  width: 5rem;
+  width: 7.5rem;
 }
 
 @keyframes rotating {
   from {
     transform: rotate(0);
-    width: 10rem;
+    opacity: 0;
   }
 
   to {
     transform: rotate(360deg);
-    width: 5rem;
+    opacity: 1;
   }
 }
