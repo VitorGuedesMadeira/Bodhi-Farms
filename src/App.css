@@ -47,3 +47,29 @@
   --font-1: 'Roboto', sans-serif;
   --font-2: 'Weed', sans-serif;
 }
+
+.loading-page {
+  background-image: linear-gradient(to bottom, black, rgb(2, 18, 2), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.loading-page img {
+  animation: rotating 7.5s infinite linear;
+  width: 5rem;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+    width: 10rem;
+  }
+
+  to {
+    transform: rotate(360deg);
+    width: 5rem;
+  }
+}

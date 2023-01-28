@@ -2,6 +2,11 @@ body.dark .navigation-container {
   background-color: #343d32;
 }
 
+body.dark .active-link:hover .drop-down,
+body.dark .none:hover .drop-down {
+  background-color: #343d32;
+}
+
 body.dark .section1-container {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent, white), url(../assets/images/backgrounds/marijuana1.jpg);
 }

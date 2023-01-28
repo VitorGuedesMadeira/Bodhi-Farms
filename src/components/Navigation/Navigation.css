@@ -1,7 +1,7 @@
 .navigation-container {
   background-color: #181311;
   color: white;
-  width: 100%;
+  width: 100vw;
   height: 3rem;
   display: flex;
   justify-content: space-between;
