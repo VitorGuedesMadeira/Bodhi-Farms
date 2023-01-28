@@ -18,6 +18,7 @@
 
 .footer-container ul {
   display: flex;
+  flex-direction: column;
   list-style: none;
   gap: 3rem;
 }
@@ -35,5 +36,9 @@
 @media (min-width: 768px) {
   .footer-container {
     padding: 1rem 5rem;
+  }
+
+  .footer-container ul {
+    flex-direction: row;
   }
 }
