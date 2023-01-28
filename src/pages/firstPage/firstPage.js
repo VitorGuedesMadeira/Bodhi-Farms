@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import Component1 from '../../components/component1/Component1';
 

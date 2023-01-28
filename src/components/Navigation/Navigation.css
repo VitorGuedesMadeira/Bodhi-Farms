@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 0 5rem;
+  padding: 0 2rem;
   box-shadow: 0 0 20px black;
   z-index: 10;
   font-weight: 900;
@@ -217,6 +217,10 @@
 }
 
 @media (min-width: 768px) {
+  .navigation-container {
+    padding: 0 5rem;
+  }
+
   .hamburger-menu {
     display: none;
   }

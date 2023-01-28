@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   overflow: hidden;
 }
 
@@ -30,4 +30,10 @@
 
 .icon:hover {
   transform: scale(1.075) rotate(360deg);
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 1rem 5rem;
+  }
 }
