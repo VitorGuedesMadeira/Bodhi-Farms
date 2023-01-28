@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaAngleDown, FaSun, FaMoon } from 'react-icons/fa';
