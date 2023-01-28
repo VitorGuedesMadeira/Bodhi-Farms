@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaAngleRight } from 'react-icons/fa';
@@ -9,63 +10,117 @@ import '../../shared/shared.css';
 const Component1 = () => (
   <div>
     <section className="section1-container">
-      <span 
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
-      data-aos-delay="300">Welcome to</span>
-      <h1 
-      data-aos="fade-up"
-      data-aos-anchor-placement="top"
-      data-aos-delay="500">Bodhi Farm</h1>
-      <h3 
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
-      data-aos-delay="700"
-      data-aos-offset="-100">Hydroponics Cannabis Lab</h3>
+      <span
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="300"
+      >
+        Welcome to
+      </span>
+      <h1
+        data-aos="fade-up"
+        data-aos-anchor-placement="top"
+        data-aos-delay="500"
+      >
+        Bodhi Farm
+      </h1>
+      <h3
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="700"
+        data-aos-offset="-100"
+      >
+        Hydroponics Cannabis Lab
+      </h3>
     </section>
 
-    <section className="section2-container" >
-      <div data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
+    <section className="section2-container">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <h2>Who are we?</h2>
         <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
         <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
         <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
         <p>Everyone is welcome to our farm! Get high! Save the World!</p>
       </div>
-      <NavLink className="btn" to="option1" data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
+      <NavLink
+        className="btn"
+        to="option1"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         Learn More
         <div className="btn2" />
       </NavLink>
     </section>
 
     <section className="pictures-container">
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
-      <img src="https://picsum.photos/250" alt="random" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
+      <img
+        src="https://picsum.photos/250"
+        alt="random"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      />
     </section>
 
     <section className="section3-container">
-      <h2 data-aos="fade-up"
-     data-aos-anchor-placement="top-center">What can we help you with?</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
+        What can we help you with?
+      </h2>
 
-      <div className="section3-options" data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
-        <div className="section3-option" >
+      <div
+        className="section3-options"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
+        <div className="section3-option">
           <div className="section3-option-image-div">
             <img src="https://picsum.photos/250" alt="random" />
           </div>
@@ -167,11 +222,17 @@ const Component1 = () => (
     </section>
 
     <section className="section4-container">
-      <h2 
+      <h2
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center">Meet our team!</h2>
-      <div className="section4-wrap" data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
+        data-aos-anchor-placement="top-center"
+      >
+        Meet our team!
+      </h2>
+      <div
+        className="section4-wrap"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="section4-team-member">
           <img src="https://picsum.photos/200" alt="random" />
           <div>
@@ -209,18 +270,23 @@ const Component1 = () => (
         </div>
       </div>
 
-      <NavLink className="btn" to="option1" data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
+      <NavLink
+        className="btn"
+        to="option1"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         Learn More
         <div className="btn2" />
       </NavLink>
     </section>
 
     <section className="section5-container">
-      <div 
-        className="section5-texts" 
+      <div
+        className="section5-texts"
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
+        data-aos-anchor-placement="top-center"
+      >
         <h2>Contact us</h2>
         <p>Interested in finding out more about the Australian Medical Cannabis industry? Need help around Australian Government cannabis legislation? Or require support for an ongoing Medical Cannabis project? Contact us today to find out how we can help you.</p>
       </div>

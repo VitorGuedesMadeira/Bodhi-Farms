@@ -1,4 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import firstPage from './pages/firstPage/firstPage';
@@ -12,8 +16,6 @@ import option3 from './pages/option3/option3';
 import './App.css';
 import './darkmode/darkmode.css';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 AOS.init();
 
 function App() {
