@@ -1,17 +1,3 @@
-.button-1 {
-  background-color: green;
-  color: white;
-  padding: 1rem 2rem;
-  transition: 0.5s;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.button-1:hover {
-  background-color: rgb(5, 84, 5);
-}
-
 .btn,
 .btn2 {
   width: 175px;
@@ -26,7 +12,7 @@
   -webkit-animation: anime 16s linear infinite;
   animation: anime 8s linear infinite;
   text-decoration: none;
-  transition: 1s;
+  transition: 0.5s;
   cursor: pointer;
   border: none;
   font-weight: 900;

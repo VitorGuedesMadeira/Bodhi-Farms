@@ -12,6 +12,10 @@ import option3 from './pages/option3/option3';
 import './App.css';
 import './darkmode/darkmode.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 function App() {
   return (
     <div className="App">

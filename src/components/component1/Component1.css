@@ -49,6 +49,7 @@
 
 .pictures-container {
   display: flex;
+  justify-content: center;
   overflow: auto;
   background-color: black;
   padding: 1rem 0;
@@ -204,6 +205,10 @@
   color: white;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+
+.section4-team-member:hover {
+  background-color: #342f2c72;
 }
 
 .section4-team-member img {
