@@ -36,15 +36,25 @@ const Component1 = () => (
 
     <section className="section2-container">
       <div
-        className="section2-information"
+        className="section2-container__divs"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
-        <h2>Who are we?</h2>
-        <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
-        <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
-        <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
-        <p>Everyone is welcome to our farm! Get high! Save the World!</p>
+        <div className="section2-container__text-1">
+          <h2>Who are we?</h2>
+          <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
+          <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
+          <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
+          <p>Everyone is welcome to our farm! Get high! Save the World!</p>
+        </div>
+        <div className="section2-container__image-1">image 1</div>
+        <div className="section2-container__image-2">image 2</div>
+        <div className="section2-container__text-2">
+          <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
+          <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
+          <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
+          <p>Everyone is welcome to our farm! Get high! Save the World!</p>
+        </div>
       </div>
       <NavLink
         className="btn"
