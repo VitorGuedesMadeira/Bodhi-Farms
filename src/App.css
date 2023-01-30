@@ -49,7 +49,9 @@
 }
 
 .loading-page {
-  background-image: linear-gradient(to bottom, black, rgb(2, 18, 2), black);
+  background-image: linear-gradient(to bottom, black, rgb(4, 29, 4), black), url(./assets/images/backgrounds/marijuana3.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
   display: flex;
   justify-content: center;
   align-items: center;

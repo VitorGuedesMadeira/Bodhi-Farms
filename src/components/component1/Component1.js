@@ -11,21 +11,21 @@ const Component1 = () => (
   <div>
     <section className="section1-container">
       <span
-        data-aos="fade-up"
+        data-aos="fade-right"
         data-aos-anchor-placement="top-center"
         data-aos-delay="300"
       >
         Welcome to
       </span>
       <h1
-        data-aos="fade-up"
+        data-aos="fade"
         data-aos-anchor-placement="top"
         data-aos-delay="500"
       >
         Bodhi Farm
       </h1>
       <h3
-        data-aos="fade-up"
+        data-aos="fade-left"
         data-aos-anchor-placement="top-center"
         data-aos-delay="700"
         data-aos-offset="-100"
@@ -36,6 +36,7 @@ const Component1 = () => (
 
     <section className="section2-container">
       <div
+        className="section2-information"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
@@ -128,19 +129,19 @@ const Component1 = () => (
             <h3>Compliance</h3>
             <ul>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>ODC Medical Cannabis Licensing</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>TGA CGMP, GAP & ISO Certification</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Medical Device Registration</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Pharmaceutical Formulation Development</span>
               </li>
             </ul>
@@ -159,19 +160,19 @@ const Component1 = () => (
             <h3>Operations</h3>
             <ul>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Infrastructure & Building Solutions</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Facility Design & Equipment Procurement</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Genetic Curatorial & Acquisition</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Contract Services Solutions</span>
               </li>
             </ul>
@@ -190,19 +191,19 @@ const Component1 = () => (
             <h3>Equities</h3>
             <ul>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Capital Solutions</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Deal Flow & Off-Take Agreements</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Mergers & Acquisitions</span>
               </li>
               <li>
-                <span><FaAngleRight className="drop-down-icon" /></span>
+                <span><FaAngleRight className="right-icon" /></span>
                 <span>Domestic & International Partnerships</span>
               </li>
             </ul>
@@ -235,36 +236,44 @@ const Component1 = () => (
       >
         <div className="section4-team-member">
           <img src="https://picsum.photos/200" alt="random" />
-          <div>
-            <h3>Name</h3>
-            <h4>Profession</h4>
+          <div className="section4-div">
+            <div className="section4-member-titles">
+              <h3>Name</h3>
+              <h4>Profession</h4>
+            </div>
             <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
           </div>
         </div>
 
         <div className="section4-team-member">
           <img src="https://picsum.photos/200" alt="random" />
-          <div>
-            <h3>Name</h3>
-            <h4>Profession</h4>
+          <div className="section4-div">
+            <div className="section4-member-titles">
+              <h3>Name</h3>
+              <h4>Profession</h4>
+            </div>
             <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
           </div>
         </div>
 
         <div className="section4-team-member">
           <img src="https://picsum.photos/200" alt="random" />
-          <div>
-            <h3>Name</h3>
-            <h4>Profession</h4>
+          <div className="section4-div">
+            <div className="section4-member-titles">
+              <h3>Name</h3>
+              <h4>Profession</h4>
+            </div>
             <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
           </div>
         </div>
 
         <div className="section4-team-member">
           <img src="https://picsum.photos/200" alt="random" />
-          <div>
-            <h3>Name</h3>
-            <h4>Profession</h4>
+          <div className="section4-div">
+            <div className="section4-member-titles">
+              <h3>Name</h3>
+              <h4>Profession</h4>
+            </div>
             <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
           </div>
         </div>

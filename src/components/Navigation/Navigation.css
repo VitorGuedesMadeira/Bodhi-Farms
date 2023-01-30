@@ -8,7 +8,7 @@
   align-items: center;
   position: fixed;
   padding: 0 2rem;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   z-index: 10;
   font-weight: 900;
 }

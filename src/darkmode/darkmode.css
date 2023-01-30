@@ -8,7 +8,7 @@ body.dark .none:hover .drop-down {
 }
 
 body.dark .section1-container {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent, white), url(../assets/images/backgrounds/marijuana1.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent 75%, white), url(../assets/images/backgrounds/marijuana1.jpg);
 }
 
 body.dark .section2-container {
