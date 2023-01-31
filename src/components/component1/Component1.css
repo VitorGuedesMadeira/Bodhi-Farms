@@ -1,3 +1,29 @@
 * {
   padding: 0;
 }
+
+.section1-container {
+  background-image: linear-gradient(to bottom, black, transparent), url(../../assets/images/backgrounds/marijuana1.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2-container {
+  background-color: red;
+  height: 100vh;
+}
+
+.section3-container {
+  background-color: mediumseagreen;
+  height: 100vh;
+}
+
+.section4-container {
+  background-color: aquamarine;
+  height: 100vh;
+}
