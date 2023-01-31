@@ -67,57 +67,6 @@ const Component1 = () => (
       </NavLink>
     </section>
 
-    <section className="pictures-container">
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-      <img
-        src="https://picsum.photos/250"
-        alt="random"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      />
-    </section>
-
     <section className="section3-container">
       <h2
         data-aos="fade-up"

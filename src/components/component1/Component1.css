@@ -69,15 +69,17 @@
 
 .section2-container__text-1 {
   background-color: #181311;
+  background-image: linear-gradient(to bottom, black, transparent);
 }
 
 .section2-container__text-2 {
   background-color: #181311;
+  background-image: linear-gradient(to top, black, transparent);
 }
 
 .section2-container__image-1 {
   display: none;
-  background-image: url(../../assets/images/backgrounds/marijuana1.jpg);
+  background-image: linear-gradient(to bottom, black, transparent), url(../../assets/images/backgrounds/marijuana1.jpg);
   background-size: cover;
 }
 
@@ -88,30 +90,6 @@
 
 .section2-container p {
   text-align: justify;
-}
-
-.pictures-container {
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  background-color: black;
-  padding: 1rem 0;
-}
-
-.pictures-container img {
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  margin-left: -1rem;
-  margin-right: -1rem;
-  cursor: pointer;
-}
-
-.pictures-container img:nth-child(odd) {
-  margin-top: 2rem;
-  margin-left: -2rem;
-}
-
-.pictures-container img:nth-child(even) {
-  margin-bottom: 2rem;
 }
 
 .section3-container {
@@ -354,6 +332,10 @@
 
   .section2-container__image-1 {
     display: flex;
+  }
+
+  .section2-container__image-2 {
+    background-image: linear-gradient(to top, black, transparent), url(../../assets/images/backgrounds/marijuana2.jpg);
   }
 
   .section3-container {

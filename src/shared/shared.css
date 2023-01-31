@@ -1,5 +1,6 @@
 .btn,
 .btn2 {
+  position: relative;
   width: 175px;
   height: 50px;
   font-size: 20px;
@@ -19,6 +20,7 @@
 }
 
 .btn2 {
+  top: 0;
   position: absolute;
   border-radius: 50px;
   z-index: -1;
