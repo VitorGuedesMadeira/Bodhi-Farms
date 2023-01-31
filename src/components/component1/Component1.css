@@ -304,6 +304,51 @@
   border-radius: 0.5rem;
 }
 
+.contact-container {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  bottom: 25px;
+  color: white;
+}
+
+.contact-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  height: 60px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(25, 36, 23), rgb(50, 78, 45));
+  padding-right: 1rem;
+  padding-left: 5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in;
+}
+
+.contact-container div:hover {
+  padding-right: 2rem;
+  font-size: 1.1em;
+}
+
+.contact-container div:hover img {
+  transform: rotate(180deg);
+}
+
+.contact-container img {
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+
 @keyframes fadeDark {
   from {
     opacity: 0;

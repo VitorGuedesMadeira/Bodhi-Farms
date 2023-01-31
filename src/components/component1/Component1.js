@@ -2,6 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaAngleRight } from 'react-icons/fa';
+import contactIcon from '../../assets/favicon/weed-icon.png';
 
 // styles
 import './Component1.css';
@@ -294,6 +295,13 @@ const Component1 = () => (
         </button>
       </form>
     </section>
+
+    <div className="contact-container">
+      <div>
+        <img src={contactIcon} alt="contact-icon" />
+        <span>contact</span>
+      </div>
+    </div>
   </div>
 );
 
