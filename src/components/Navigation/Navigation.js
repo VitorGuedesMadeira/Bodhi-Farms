@@ -1,28 +1,43 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaSortDown } from 'react-icons/fa'
+import { FaAngleDown, FaSun, FaMoon } from 'react-icons/fa';
+
 // styles
 import './Navigation.css';
 
 const Navigation = () => {
   const [isHamburgerActive, setActive] = useState(false);
+  const [isDarkModeActive, setDarkMode] = useState(true);
 
   const toggleClass = () => {
     setActive(!isHamburgerActive);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkModeActive);
+    if (isDarkModeActive) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  };
+
   return (
     <nav className="navigation-container">
-      <div className="navigation-logo">
-        <span>MyLOGO</span>
-      </div>
+      <span className="navigation-logo">Bodhi Farm</span>
 
       <div className="navigation-menu-div">
         <ul className="navigation-ul">
           <li>
-            <NavLink className={({ isActive }) => (isActive ? 'active-link link-1' : 'none')} to="/">
-              FirstPage
-              <FaSortDown />
+            <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link link-1' : 'none')} to="/secondPage">
+              Services
+              <FaAngleDown className="drop-down-icon" />
               <ul className="drop-down">
                 <li>
                   <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="option1">
@@ -43,14 +58,9 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="secondPage">
-              SecondPage
-            </NavLink>
-          </li>
-          <li>
             <NavLink className={({ isActive }) => (isActive ? 'active-link link-1' : 'none')} to="thirdPage">
-              ThirdPage
-              <FaSortDown />
+              Team
+              <FaAngleDown className="drop-down-icon" />
               <ul className="drop-down">
                 <li>
                   <NavLink className={({ isActive }) => (isActive ? 'active-link link-2' : 'none')} to="option1">
@@ -71,18 +81,22 @@ const Navigation = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="navigation-logo">
-          <span>MyContact</span>
-        </div>
+
+        <input onClick={toggleDarkMode} type="checkbox" className="checkbox" id="chk" />
+        <label className="label" htmlFor="chk">
+          <FaSun className="fa-sun" />
+          <FaMoon className="fa-moon" />
+          <div className="ball" />
+        </label>
       </div>
 
       <div onClick={toggleClass} className={isHamburgerActive ? 'hamburger-menu on' : 'hamburger-menu'}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
+        <div />
       </div>
     </nav>
-  )
+  );
 };
 
 export default Navigation;

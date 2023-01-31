@@ -1,0 +1,63 @@
+.btn,
+.btn2 {
+  position: relative;
+  width: 175px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 50px;
+  background: linear-gradient(-45deg, orange, #ff3d3d, goldenrod);
+  background-size: 600%;
+  -webkit-animation: anime 16s linear infinite;
+  animation: anime 8s linear infinite;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
+  font-weight: 900;
+}
+
+.btn2 {
+  top: 0;
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  filter: blur(30px);
+  opacity: 0.8;
+  transition: 1s;
+}
+
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h2 {
+  font-family: var(--font-2);
+  font-size: 2em;
+}
