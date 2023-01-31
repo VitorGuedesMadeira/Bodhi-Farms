@@ -60,4 +60,5 @@
 h2 {
   font-family: var(--font-2);
   font-size: 2em;
+  font-weight: 100;
 }

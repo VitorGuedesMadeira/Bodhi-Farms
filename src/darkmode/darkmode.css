@@ -7,6 +7,11 @@ body.dark .none:hover .drop-down {
   background-color: #343d32;
 }
 
+body.dark .drop-down li:hover {
+  background-color: #252d25;
+  color: orange;
+}
+
 body.dark .section1-container {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent 75%, white), url(../assets/images/backgrounds/marijuana1.jpg);
 }
@@ -16,13 +21,26 @@ body.dark .section2-container {
   background-color: white;
 }
 
-body.dark .pictures-container {
-  background-color: white;
+body.dark .section2-container__text-1 {
+  background-color: #ddf6d9;
+  background-image: linear-gradient(to bottom, white, transparent);
+}
+
+body.dark .section2-container__text-2 {
+  background-color: #ddf6d9;
+  background-image: linear-gradient(to top, white, transparent);
+}
+
+body.dark .section2-container__image-1 {
+  display: none;
+  background-image: linear-gradient(to bottom, white, transparent, transparent), url(../assets/images/backgrounds/marijuana1.jpg);
+  background-size: cover;
 }
 
 body.dark .section3-container {
-  background-color: #91b08a;
+  background-color: rgb(115, 146, 123);
   background-image: linear-gradient(to bottom, white, transparent);
+  color: black;
 }
 
 body.dark .section3-option {
@@ -32,7 +50,7 @@ body.dark .section3-option {
 
 body.dark .fixed-backgrounds-container,
 body.dark .section4-container {
-  background-color: rgb(22, 59, 31);
+  background-color: rgb(115, 146, 123);
 }
 
 body.dark .section4-team-member {
@@ -41,10 +59,24 @@ body.dark .section4-team-member {
 }
 
 body.dark .section5-container {
-  background-color: rgb(15, 34, 20);
+  background-color: rgb(36, 46, 39);
   color: white;
 }
 
 body.dark .footer-container {
   background-color: #343d32;
+}
+
+@media (min-width: 768px) {
+  body.dark .section2-container__divs > * {
+    width: calc(100% / 2);
+  }
+
+  body.dark .section2-container__image-1 {
+    display: flex;
+  }
+
+  body.dark .section2-container__image-2 {
+    background-image: linear-gradient(to top, white, transparent, transparent), url(../assets/images/backgrounds/marijuana2.jpg);
+  }
 }
