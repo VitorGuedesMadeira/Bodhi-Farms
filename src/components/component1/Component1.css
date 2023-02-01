@@ -87,7 +87,7 @@
 }
 
 .section2-container p {
-  text-align: justify;
+  text-align: center;
 }
 
 .section3-container {
@@ -274,6 +274,7 @@
   max-width: 300px;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 1rem;
 }
 
