@@ -288,16 +288,20 @@
 }
 
 .section5-container {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   text-align: center;
+}
+
+.section5-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .section5-texts {
@@ -422,15 +426,16 @@
 
   .section5-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
     padding: 5rem;
+  }
+
+  .section5-div {
+    flex-direction: row;
   }
 
   .section5-texts {
     max-width: 300px;
-    text-align: left;
+    text-align: right;
   }
 
   .form {

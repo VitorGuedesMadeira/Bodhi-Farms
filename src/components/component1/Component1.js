@@ -48,8 +48,8 @@ const Component1 = () => (
           <p>We are currently working in conjunction with both local, and international universities to conduct   research, and assist in the implementation of both modern, and ancient methods of sustainable agriculture.</p>
           <p>Everyone is welcome to our farm! Get high! Save the World!</p>
         </div>
-        <div className="section2-container__image-1">image 1</div>
-        <div className="section2-container__image-2">image 2</div>
+        <div className="section2-container__image-1" />
+        <div className="section2-container__image-2" />
         <div className="section2-container__text-2">
           <p>We are a fully Licensed  Local Producer of premium craft cannabis located in Lamphun.</p>
           <p>We strive to produce consistent superior quality, pesticide-free, affordable cannabis. We achieve this by growing without soil. We treat our water on site through a three step process of reverse osmosis, distillation, and softening.</p>
@@ -253,48 +253,50 @@ const Component1 = () => (
 
     <section className="section5-container">
       <div
-        className="section5-texts"
+        className="section5-div"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
-        <h2>Contact us</h2>
-        <p>Interested in finding out more about the Australian Medical Cannabis industry? Need help around Australian Government cannabis legislation? Or require support for an ongoing Medical Cannabis project? Contact us today to find out how we can help you.</p>
+        <div
+          className="section5-texts"
+        >
+          <h2>Contact us</h2>
+          <p>Interested in finding out more about the Australian Medical Cannabis industry? Need help around Australian Government cannabis legislation? Or require support for an ongoing Medical Cannabis project? Contact us today to find out how we can help you.</p>
+        </div>
+        <form
+          action="https://formspree.io/f/mdovakbk"
+          method="post"
+          className="form"
+        >
+          <input
+            type="text"
+            name="name"
+            required
+            maxLength="30"
+            placeholder="Full Name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email address"
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="7"
+            maxLength="500"
+            required
+            placeholder="Enter text here"
+          />
+          <small />
+          <button className="btn" type="submit">
+            Get in touch
+            <div className="btn2" />
+          </button>
+        </form>
       </div>
-      <form
-        action="https://formspree.io/f/mdovakbk"
-        method="post"
-        className="form"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-      >
-        <input
-          type="text"
-          name="name"
-          required
-          maxLength="30"
-          placeholder="Full Name"
-        />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          placeholder="Email address"
-        />
-        <textarea
-          name="message"
-          cols="30"
-          rows="7"
-          maxLength="500"
-          required
-          placeholder="Enter text here"
-        />
-        <small />
-        <button className="btn" type="submit">
-          Get in touch
-          <div className="btn2" />
-        </button>
-      </form>
     </section>
 
     <div className="contact-container">
