@@ -63,6 +63,10 @@ body.dark .section5-container {
   color: white;
 }
 
+body.dark .first-page-container {
+  background-color: rgb(36, 46, 39);
+}
+
 body.dark .footer-container {
   background-color: #343d32;
 }

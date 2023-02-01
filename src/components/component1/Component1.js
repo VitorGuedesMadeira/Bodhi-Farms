@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaAngleRight } from 'react-icons/fa';
+import { FaAngleRight, FaRegQuestionCircle } from 'react-icons/fa';
 import contactIcon from '../../assets/favicon/weed-icon.png';
 
 // styles
@@ -180,6 +180,7 @@ const Component1 = () => (
       <div className="fixed-background-1" />
       <div className="fixed-background-2" />
       <div className="fixed-background-3" />
+      <div className="fixed-background-4" />
     </section>
 
     <section className="section4-container">
@@ -299,7 +300,8 @@ const Component1 = () => (
     <div className="contact-container">
       <div>
         <img src={contactIcon} alt="contact-icon" />
-        <span>contact</span>
+        <span>suport</span>
+        <FaRegQuestionCircle />
       </div>
     </div>
   </div>
